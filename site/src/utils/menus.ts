@@ -1,5 +1,14 @@
 const menus = [
   {
+    title: "Xometry",
+    children: [
+      {
+        title: "test",
+        to: "/components/test/button",
+      },
+    ],
+  },
+  {
     title: "开发指南",
     children: [
       {
