@@ -1,4 +1,4 @@
-import { Image, Swiper, Toast } from "@taroify/core"
+import { Swiper } from "@taroify/core"
 import { useState } from "react"
 import Block from "../../../components/block"
 import Page from "../../../components/page"
@@ -20,18 +20,6 @@ function ImageSwiper() {
   return (
     <Swiper className="image-swiper" lazyRender autoplay={4000}>
       <Swiper.Indicator />
-      <Swiper.Item>
-        <Image className="image" src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
-      </Swiper.Item>
-      <Swiper.Item>
-        <Image className="image" src="https://img01.yzcdn.cn/vant/apple-2.jpg" />
-      </Swiper.Item>
-      <Swiper.Item>
-        <Image className="image" src="https://img01.yzcdn.cn/vant/apple-3.jpg" />
-      </Swiper.Item>
-      <Swiper.Item>
-        <Image className="image" src="https://img01.yzcdn.cn/vant/apple-4.jpg" />
-      </Swiper.Item>
     </Swiper>
   )
 }
@@ -39,11 +27,7 @@ function ImageSwiper() {
 function SwiperWithOnChange() {
   return (
     <>
-      <Toast id="toast" />
-      <Swiper
-        className="onchange-swiper"
-        onChange={(value) => Toast.open(`当前 Swipe 索引：${value}`)}
-      >
+      <Swiper className="onchange-swiper">
         <Swiper.Indicator />
         <Swiper.Item>1</Swiper.Item>
         <Swiper.Item>2</Swiper.Item>

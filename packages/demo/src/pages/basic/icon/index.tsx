@@ -1,4 +1,4 @@
-import { Badge, Flex, Notify, Tabs } from "@taroify/core"
+import { Flex, Tabs } from "@taroify/core"
 import { inBrowser } from "@taroify/core/utils/base"
 import * as icons from "@taroify/icons"
 import { CartOutlined, ChatOutlined, FireOutlined } from "@taroify/icons"
@@ -78,15 +78,6 @@ export default function IconDemo() {
 
   return (
     <Page title="Icon 图标" className="icon-demo">
-      <Notify
-        className="icon-demo-notify"
-        duration={1500}
-        color="success"
-        open={open}
-        onClose={setOpen}
-      >
-        {notify}
-      </Notify>
       <Tabs value={tab} lazyRender={false} onChange={setTab}>
         <Tabs.TabPane title="用法示例">
           <Block title="基础用法">
@@ -95,25 +86,6 @@ export default function IconDemo() {
                 <ChatOutlined />
               </Flex.Item>
               <Flex.Item span={6}>{createElement(icons.ChatOutlined)}</Flex.Item>
-            </Flex>
-          </Block>
-          <Block title="徽标提示">
-            <Flex>
-              <Flex.Item span={6}>
-                <Badge dot>
-                  <ChatOutlined />
-                </Badge>
-              </Flex.Item>
-              <Flex.Item span={6}>
-                <Badge content="9">
-                  <ChatOutlined />
-                </Badge>
-              </Flex.Item>
-              <Flex.Item span={6}>
-                <Badge content="99+">
-                  <ChatOutlined />
-                </Badge>
-              </Flex.Item>
             </Flex>
           </Block>
           <Block title="图标颜色">

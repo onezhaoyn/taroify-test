@@ -83,9 +83,6 @@ export default function SideNav(props: SideNavProps) {
         )
       }
     >
-      <MenuItemGroup title="钻石赞助商">
-        <DiamondSponsor />
-      </MenuItemGroup>
       {
         //
         _.map(menus, (group) => (

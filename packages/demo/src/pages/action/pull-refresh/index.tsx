@@ -1,4 +1,4 @@
-import { Image, PullRefresh, Tabs } from "@taroify/core"
+import { PullRefresh, Tabs } from "@taroify/core"
 import { View } from "@tarojs/components"
 import { usePageScroll } from "@tarojs/taro"
 import { useState } from "react"
@@ -75,21 +75,6 @@ function CustomPullRefresh() {
         }, 1000)
       }}
     >
-      <PullRefresh.Pulling>
-        {({ distance = 0 }) => (
-          <Image
-            className="doge"
-            style={{ transform: `scale(${distance / 80})` }}
-            src="https://img.yzcdn.cn/vant/doge.png"
-          />
-        )}
-      </PullRefresh.Pulling>
-      <PullRefresh.Loosing>
-        <Image className="doge" src="https://img.yzcdn.cn/vant/doge.png" />
-      </PullRefresh.Loosing>
-      <PullRefresh.Loading>
-        <Image className="doge" src="https://img.yzcdn.cn/vant/doge-fire.jpg" />
-      </PullRefresh.Loading>
       <View className="pull-text">{counter ? "刷新次数：" + counter : "下拉试试"}</View>
     </PullRefresh>
   )

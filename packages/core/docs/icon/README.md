@@ -20,24 +20,6 @@ import { ChatOutlined } from "@taroify/icons"
 <ChatOutlined />
 ```
 
-### 徽标提示
-
-与 Badge 组件组合使用，会在图标右上角展示相应的徽标。
-
-```tsx
-<Badge dot>
-  <ChatOutlined />
-</Badge>
-
-<Badge content="9">
-  <ChatOutlined />
-</Badge>
-
-<Badge content="99+">
-  <ChatOutlined />
-</Badge>
-```
-
 ### 图标颜色
 
 通过 `style` 属性来设置图标的颜色。
@@ -62,13 +44,13 @@ import { ChatOutlined } from "@taroify/icons"
 
 ### Props
 
-| 参数 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- |
-| color | 图标颜色 | _string_ | `inherit` |
-| size | 图标大小，如 `20px` `2em`，默认单位为 `px` | _number \| string_ | `inherit` |
+| 参数  | 说明                                       | 类型               | 默认值    |
+| ----- | ------------------------------------------ | ------------------ | --------- |
+| color | 图标颜色                                   | _string_           | `inherit` |
+| size  | 图标大小，如 `20px` `2em`，默认单位为 `px` | _number \| string_ | `inherit` |
 
 ### Events
 
-| 事件名 | 说明           | 回调参数            |
-| ------ | -------------- | ------------------- |
-| onClick  | 点击图标时触发 | _event: ITouchEvent_ |
+| 事件名  | 说明           | 回调参数             |
+| ------- | -------------- | -------------------- |
+| onClick | 点击图标时触发 | _event: ITouchEvent_ |

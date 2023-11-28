@@ -49,106 +49,13 @@ const menus = [
         to: "/components/flex/",
       },
       {
-        title: "Popup 弹出层",
-        to: "/components/popup/",
-      },
-      {
         title: "Style 内置样式",
         to: "/components/style/",
       },
-      {
-        title: "Toast 轻提示",
-        to: "/components/toast/",
-      },
+
       {
         title: "Space 间距",
         to: "/components/space/",
-      },
-      {
-        title: "SafeArea 安全区域",
-        to: "/components/safe-area/",
-      },
-      {
-        title: "FixedView 固定视图",
-        to: "/components/fixed-view/",
-      },
-    ],
-  },
-  {
-    title: "表单组件",
-    subpackage: "form",
-    children: [
-      {
-        title: "AreaPicker 省市区选择",
-        to: "/components/area-picker/",
-      },
-      {
-        title: "Cascader 级联选择",
-        to: "/components/cascader/",
-      },
-      {
-        title: "Calendar 日历",
-        to: "/components/calendar/",
-      },
-      {
-        title: "Checkbox 复选框",
-        to: "/components/checkbox/",
-      },
-      {
-        title: "DatetimePicker 时间选择",
-        to: "/components/datetime-picker/",
-      },
-      {
-        title: "Field 输入框",
-        to: "/components/field/",
-      },
-      {
-        title: "Form 表单",
-        to: "/components/form/",
-      },
-      {
-        title: "NumberKeyboard 数字键盘",
-        to: "/components/number-keyboard/",
-      },
-      {
-        title: "PasswordInput 密码输入框",
-        to: "/components/password-input/",
-      },
-      {
-        title: "Picker 选择器",
-        to: "/components/picker/",
-      },
-      {
-        title: "Radio 单选框",
-        to: "/components/radio/",
-      },
-      {
-        title: "Rate 评分",
-        to: "/components/rate/",
-      },
-      {
-        title: "Search 搜索",
-        to: "/components/search/",
-      },
-      {
-        title: "Slider 滑块",
-        to: "/components/slider/",
-      },
-      {
-        title: "Signature 签名",
-        to: "/components/signature/",
-      },
-      {
-        title: "Stepper 步进器",
-        to: "/components/stepper/",
-      },
-      {
-        title: "Switch 开关",
-        to: "/components/switch/",
-      },
-      {
-        title: "Uploader 文件上传",
-        to: "/components/uploader/",
       },
     ],
   },
@@ -157,32 +64,8 @@ const menus = [
     subpackage: "action",
     children: [
       {
-        title: "ActionSheet 动作面板",
-        to: "/components/action-sheet/",
-      },
-      {
-        title: "Dialog 弹出框",
-        to: "/components/dialog/",
-      },
-      {
-        title: "DropdownMenu 下拉菜单",
-        to: "/components/dropdown-menu/",
-      },
-      {
-        title: "FloatingPanel 浮动面板",
-        to: "/components/floating-panel/",
-      },
-      {
-        title: "FloatingBubble 浮动气泡",
-        to: "/components/floating-bubble/",
-      },
-      {
         title: "Loading 加载",
         to: "/components/loading/",
-      },
-      {
-        title: "Notify 消息提示",
-        to: "/components/notify/",
       },
       {
         title: "Backdrop 背景板",
@@ -192,40 +75,12 @@ const menus = [
         title: "PullRefresh 下拉刷新",
         to: "/components/pull-refresh/",
       },
-      {
-        title: "ShareSheet 分享面板",
-        to: "/components/share-sheet/",
-      },
-      {
-        title: "SwipeCell 滑动单元格",
-        to: "/components/swipe-cell/",
-      },
     ],
   },
   {
     title: "展示组件",
     subpackage: "display",
     children: [
-      {
-        title: "Avatar 头像",
-        to: "/components/avatar/",
-      },
-      {
-        title: "Badge 徽标",
-        to: "/components/badge/",
-      },
-      {
-        title: "Circle 环形进度条",
-        to: "/components/circle/",
-      },
-      {
-        title: "Collapse 折叠面板",
-        to: "/components/collapse/",
-      },
-      {
-        title: "Countdown 倒计时",
-        to: "/components/countdown/",
-      },
       {
         title: "Divider 分割线",
         to: "/components/divider/",
@@ -239,40 +94,12 @@ const menus = [
         to: "/components/list/",
       },
       {
-        title: "NoticeBar 通知栏",
-        to: "/components/notice-bar/",
-      },
-      {
-        title: "Progress 进度条",
-        to: "/components/progress/",
-      },
-      {
-        title: "RollingText 翻滚文本动效",
-        to: "/components/rolling-text/",
-      },
-      {
-        title: "Skeleton 骨架屏",
-        to: "/components/skeleton/",
-      },
-      {
-        title: "Steps 步骤条",
-        to: "/components/steps/",
-      },
-      {
         title: "Sticky 粘性布局",
         to: "/components/sticky/",
       },
       {
         title: "Swiper 轮播",
         to: "/components/swiper/",
-      },
-      {
-        title: "Tag 标签",
-        to: "/components/tag/",
-      },
-      {
-        title: "Timeline 时间轴",
-        to: "/components/timeline/",
       },
     ],
   },

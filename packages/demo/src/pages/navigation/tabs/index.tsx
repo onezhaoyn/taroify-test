@@ -1,4 +1,4 @@
-import { Tabs, Toast } from "@taroify/core"
+import { Tabs } from "@taroify/core"
 import { MoreOutlined } from "@taroify/icons"
 import Block from "../../../components/block"
 import CustomWrapper from "../../../components/custom-wrapper"
@@ -74,13 +74,11 @@ function CardTabs() {
 function TabsWithTabClick() {
   return (
     <>
-      <Toast id="toast" />
-      <Tabs onTabClick={({ title }) => Toast.open(title)}>
+      <Tabs onTabClick={({ title }) => {}}>
         <Tabs.TabPane title="标签 1">内容 1</Tabs.TabPane>
         <Tabs.TabPane title="标签 2">内容 2</Tabs.TabPane>
         <Tabs.TabPane title="标签 3">内容 3</Tabs.TabPane>
       </Tabs>
-      <Toast id="toast" />
     </>
   )
 }
