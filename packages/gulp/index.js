@@ -14,8 +14,6 @@ function watch() {
   watchTypescript("icons")
   watchTypescript("hooks")
   watchTypescript("core")
-  watchTypescript("commerce")
-  watchReadmeFiles("commerce/src", "components")
   watchReadmeFiles("core/src", "components")
   watchReadmeFiles("core/docs", "components")
   watchReadmeFiles("hooks/src", "hooks")
@@ -27,19 +25,12 @@ function watchSymlink() {
   watchTypescriptSymlink("icons")
   watchTypescriptSymlink("hooks")
   watchTypescriptSymlink("core")
-  watchTypescriptSymlink("commerce")
   watchReadmeFiles("core/src", "components")
   watchReadmeFiles("core/docs", "components")
-  watchReadmeFiles("commerce/src", "components")
   watchReadmeFiles("hooks/src", "hooks")
 }
 
-const createBundles = parallel(
-  createBundle("icons"),
-  createBundle("hooks"),
-  createBundle("core"),
-  createBundle("commerce"),
-)
+const createBundles = parallel(createBundle("icons"), createBundle("hooks"), createBundle("core"))
 
 exports.createBundles = createBundles
 
@@ -58,7 +49,7 @@ exports.develop = series(
     watchSymlink,
     serveDemo,
     serveSite,
-  )
+  ),
 )
 
 exports.watch = watch
@@ -66,22 +57,17 @@ exports.watch = watch
 exports.buildPackages = series(
   createBundles, //
   copyFontFiles("core"),
-  copyFontFiles("commerce"),
   buildScss("icons"),
   buildScss("core"),
-  buildScss("commerce"),
   buildTypescript("icons"),
   buildTypescript("hooks"),
   buildTypescript("core"),
-  buildTypescript("commerce"),
 )
 
 const readme = series(
   copyReadmeFiles("core/src", "components"), //
   copyReadmeFiles("core/docs", "components"),
   copyReadmeFiles("hooks/src", "hooks"),
-  copyReadmeFiles("commerce/docs", "components"),
-  copyReadmeFiles("commerce/src", "components"),
 )
 
 exports.buildWww = series(

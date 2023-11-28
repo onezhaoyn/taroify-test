@@ -318,60 +318,9 @@ const subpackages = [
     title: "导航组件",
     pages: [
       {
-        title: "Grid 宫格",
-        name: "Grid",
-        path: "grid/index",
-      },
-      {
-        title: "IndexList 索引栏",
-        name: "IndexList",
-        path: "index-list/index",
-      },
-      {
-        title: "Navbar 导航栏",
-        name: "Navbar",
-        path: "navbar/index",
-      },
-      {
-        title: "Pagination 分页",
-        name: "Pagination",
-        path: "pagination/index",
-      },
-      {
-        title: "Sidebar 侧边导航",
-        name: "Sidebar",
-        path: "sidebar/index",
-      },
-      {
         title: "Tabs 标签页",
         name: "Tabs",
         path: "tabs/index",
-      },
-      {
-        title: "Tabbar 标签栏",
-        name: "Tabbar",
-        path: "tabbar/index",
-      },
-      {
-        title: "TreeSelect 分类选择",
-        name: "TreeSelect",
-        path: "tree-select/index",
-      },
-      {
-        title: "BackTop 回到顶部",
-        name: "BackTop",
-        path: "back-top/index",
-      },
-    ],
-  },
-  {
-    root: "pages/commerce",
-    title: "电商组件",
-    pages: [
-      {
-        title: "ActionBar 动作栏",
-        name: "ActionBar",
-        path: "action-bar/index",
       },
     ],
   },

@@ -1,6 +1,5 @@
-import { Countdown, Grid, Toast } from "@taroify/core"
+import { Countdown, Toast } from "@taroify/core"
 import { CountdownInstance } from "@taroify/core/countdown"
-import { PauseCircleOutlined, PlayCircleOutlined, Replay } from "@taroify/icons"
 import { View } from "@tarojs/components"
 import { useRef } from "react"
 import Block from "../../../components/block"
@@ -20,19 +19,6 @@ function CountdownWithManualControl() {
         format="ss:SSS"
         onComplete={() => Toast.open("倒计时结束")}
       />
-      <Grid columns={3} clickable>
-        <Grid.Item
-          icon={<PlayCircleOutlined />}
-          text="开始"
-          onClick={() => countRef.current?.start()}
-        />
-        <Grid.Item
-          icon={<PauseCircleOutlined />}
-          text="暂停"
-          onClick={() => countRef.current?.pause()}
-        />
-        <Grid.Item icon={<Replay />} text="重置" onClick={() => countRef.current?.reset()} />
-      </Grid>
     </>
   )
 }

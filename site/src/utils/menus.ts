@@ -281,51 +281,9 @@ const menus = [
     subpackage: "navigation",
     children: [
       {
-        title: "Grid 宫格",
-        to: "/components/grid/",
-      },
-      {
-        title: "IndexList 索引栏",
-        to: "/components/index-list/",
-      },
-      {
-        title: "Navbar 导航栏",
-        to: "/components/navbar/",
-      },
-      {
-        title: "Pagination 分页",
-        to: "/components/pagination/",
-      },
-      {
-        title: "Sidebar 侧边导航",
-        to: "/components/sidebar/",
-      },
-      {
         title: "Tabs 标签页",
         name: "Tabs",
         to: "/components/tabs/",
-      },
-      {
-        title: "Tabbar 标签栏",
-        to: "/components/tabbar/",
-      },
-      {
-        title: "TreeSelect 分类选择",
-        to: "/components/tree-select/",
-      },
-      {
-        title: "BackTop 回到顶部",
-        to: "/components/back-top/",
-      },
-    ],
-  },
-  {
-    title: "电商组件",
-    subpackage: "commerce",
-    children: [
-      {
-        title: "ActionBar 动作栏",
-        to: "/components/action-bar/",
       },
     ],
   },
